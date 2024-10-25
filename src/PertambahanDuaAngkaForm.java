@@ -1,5 +1,4 @@
 
-import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
 /*
@@ -52,6 +51,11 @@ public class PertambahanDuaAngkaForm extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel3.setText("Hasil");
 
+        txtAngkaPertama.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtAngkaPertamaFocusGained(evt);
+            }
+        });
         txtAngkaPertama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtAngkaPertamaActionPerformed(evt);
@@ -63,6 +67,11 @@ public class PertambahanDuaAngkaForm extends javax.swing.JFrame {
             }
         });
 
+        txtAngkaKedua.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtAngkaKeduaFocusGained(evt);
+            }
+        });
         txtAngkaKedua.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtAngkaKeduaKeyTyped(evt);
@@ -210,6 +219,17 @@ public class PertambahanDuaAngkaForm extends javax.swing.JFrame {
         }
     
     }//GEN-LAST:event_txtAngkaKeduaKeyTyped
+
+    private void txtAngkaPertamaFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtAngkaPertamaFocusGained
+        // TODO add your handling code here:
+        txtAngkaPertama.setText("");
+        
+    }//GEN-LAST:event_txtAngkaPertamaFocusGained
+
+    private void txtAngkaKeduaFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtAngkaKeduaFocusGained
+        // TODO add your handling code here:
+        txtAngkaKedua.setText("");
+    }//GEN-LAST:event_txtAngkaKeduaFocusGained
 
     /**
      * @param args the command line arguments
