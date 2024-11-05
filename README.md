@@ -1,5 +1,5 @@
 
-# Aplikasi Aplikasi Pertambahan Dua Angka
+# Aplikasi Pertambahan Dua Angka
 
 Latihan 1 Modul Aplikasi Pertambahan Dua Angka
 
